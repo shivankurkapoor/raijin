@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Raijin.iml" filepath="$PROJECT_DIR$/.idea/Raijin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RaijinFrontEnd/.idea/RaijinFrontEnd.iml" filepath="$PROJECT_DIR$/../RaijinFrontEnd/.idea/RaijinFrontEnd.iml" />
+    </modules>
+  </component>
+</project>

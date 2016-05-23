@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Raijin</title>
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Asap">
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
+      <script src="../static/js/jquery-2.2.3.js"></script>
+      <style type="text/css">* {
+         font-family: 'Asap';
+         }
+      </style>
+     <script>
+							$(function(){
+								$.ajax({
+									url : '/getMovies',
+									type : 'GET',
+									success: function(res){
+										var div = $('<div>')
+							.attr('class', 'col-sm-3')
+							.append($('<div>')
+								.attr('class', 'thumbnail')
+								.append($('<img>')
+									.attr('src', '../static/images/movie_poster.jpg'),
+									$('<div>')
+									.attr('class', 'caption')
+									.append($('<h4>')
+										.attr('style','margin-bottom: 24px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;'),
+											$('<h5>')
+										.attr('style','margin-bottom: 24px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;'))))
+														
+										var movieObj = JSON.parse(res);
+										var movie = '';
+										
+										$.each(movieObj,function(index, value){
+											movie = $(div).clone();
+											$(movie).find('h4').text(value.movieName);
+											$(movie).find('h5').text(value.movieCategory);
+											$(document.getElementById("innerMostRow")).append(movie);
+										});
+									},
+									error: function(error){
+										console.log(error);
+									}
+								});
+							});
+					    </script>                     
+   </head>
+   <body>
+      <div style="margin-top: 16px;" class="container">
+	  <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="/showSignin">Sign In</a>
+                    </li>
+                    <li role="presentation"><a href="showSignUp">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+			<div class="page-header">
+                  <h1>RAIJIN - powered by PySpark</h1>
+				  <h3>your personal movie recommendation engine</h3>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-xs-12">
+               <h2>
+                  <div class="pull-right">
+                     <form action="/refresh?user=sdfdf" method="post"><button class="btn btn-primary">Refresh</button></form>
+                  </div>
+                  Recommended Movies
+               </h2>
+               <div class="alert alert-success">Login to generate some recommendations</div>
+               <div class="row">
+                  <div class="col-xs-12">
+                     <h2>All Movies</h2>
+                     <div class="row" id = "innerMostRow">
+                     </div>               
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
