@@ -1,1 +1,0 @@
-set path for your mongo db to this directory
