@@ -1,7 +1,7 @@
-# Raijin - Movie Recommendation Engine (developed using Python Spark Library)
+# RAIJIN - Movie Recommendation Engine (developed using Python Spark Library)
 
 <h3>Introduction</h3>
-Raijin is a movie recommendation engine which recommends movies to a user. The model has been trained on movie lens dataset using collaborating filtering (alternating least squares method). User rates a few movies on a scale of 5 (highest being 5 and loweset being 1) and the Raijin displays a top 10  recommendations for the user. The ratings for other than top 10 movies can also be obtainied (not displayed though).
+Raijin is a movie recommendation engine which recommends movies to a user. The model has been trained on movie lens dataset using collaborating filtering (alternating least squares method). User rates a few movies on a scale of 5 (highest being 5 and loweset being 1) and the Raijin displays top 10 recommendations to the user. The ratings for other than top 10 movies can also be obtainied (not displayed though).
 
 <h3>Technologies Used</h3>
 1. API - Python, PySpark, Flask
