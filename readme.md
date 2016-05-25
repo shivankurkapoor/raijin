@@ -9,9 +9,8 @@ Raijin is a movie recommendation engine which recommends movies to a user. The m
 3. Database - MongoDB
 
 <h3>Dataset - Movie Lens</h3>
-Two sample datasets are there in Datasets folder
 1. [MovieLens](http://grouplens.org/datasets/movielens/)
-2. Traininig Data -  Due to the limitation of my machine, I trained the model on ml-1m dataset which has about 1 million ratings for 3952 movies. You can download larger datasets to train the model.
+2. Traininig Data -  Due to the limitation of my machine, I trained the model on ml-1m dataset which has about 1 million ratings for 3952 movies. You can download larger datasets to train the model. Two sample datasets are there in Datasets folder
 	 
 <h3>Setup</h3>
 1. Download and install the following
