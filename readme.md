@@ -20,7 +20,7 @@ Raijin is a movie recommendation engine which recommends movies to a user. The m
 2. Download the repository on your local machine
 3. Download the dataset from [MovieLens](http://grouplens.org/datasets/movielens/) and put it in the Datasets folder. Please check for the format and delimiters used in the dataset for movies and ratings flies and make the necessary changes in the recomengine.py.
 4. Set the necesssary paths for the dataset files in the properties.py
-5. Create a new MongoDB database and set its path to the RaijinDB folder. Run the MongoDB servier and create the following collections in the database
+5. Create a new MongoDB database and set its path to the RaijinDB folder. Run the MongoDB server and create the following collections in the database
 	1. Movies - contains the records for all the movies
 	2. Users - contains the records for registered users
 	3. userRatings - contains the records for the ratings submitted by the user
@@ -33,4 +33,6 @@ Raijin is a movie recommendation engine which recommends movies to a user. The m
 4. Sign up to create an account on Raijin.
 5. Sign in to your account.
 6. User home page will show your recommendations. If this is a first login, rate a few movies and hit submit button to generate recommendations.
-PS - Interface is a little shabby and not too bad for development and learning purpose. Enjoy :)
+
+
+PS : Interface is a little shabby, but not too bad for development and learning purpose. Enjoy :)
