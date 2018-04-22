@@ -29,7 +29,7 @@ Raijin is a movie recommendation engine which recommends movies to a user. The m
 ## Run
 1. Run app.py (inside RaijinEngine folder). This will run PySpark, train the model and deploy the Raijin API on local server.
 2. Run app.py (inside RaijinInterface folder). This will deploy the frontend interface on local server. You can change the listening port (default is set to 5002)
-3. Open the browser and type in http://IP Address:Port
+3. Open the browser and type in http://<ip-address>:<port>
 4. Sign up to create an account on Raijin.
 5. Sign in to your account.
 6. User home page will show your recommendations. If this is a first login, rate a few movies and hit submit button to generate recommendations.
